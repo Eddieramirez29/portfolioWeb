@@ -1,0 +1,66 @@
+$backgroundColor1:rgb(0, 0, 0);
+$fontColor1: white;
+$fontColor2: grey;
+$containerWidthMobile:425px;
+
+body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 425px;
+    background-color: $backgroundColor1;
+}
+
+img
+{
+    width: 380px;
+}
+
+.headerContainer, .containerKnowledge, .containerMain,
+.containerPomodoro, .containerREST, .footerContainer
+{
+    width: $containerWidthMobile;
+}
+
+#developerName, #developerGreetings, #contactMe
+{
+    color: $fontColor1;
+}
+#developerDescription
+{
+    color: $fontColor2;
+}
+
+
+.headerContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#developerName
+{
+    font-weight: 700;
+}
+#developerPhoto
+{
+    width: 223px;
+}
+#developerGreetings
+{
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#developerDescription
+{
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
