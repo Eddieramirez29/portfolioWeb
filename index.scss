@@ -64,3 +64,27 @@ img
     justify-content: center;
     align-content: center;
 }
+
+.containerKnowledge
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerKnowledge >*
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.technology
+{
+    color: $fontColor1;
+}
+
+.expertise
+{
+    color: $fontColor2;
+}
