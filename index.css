@@ -5,7 +5,6 @@ body {
   flex-direction: column;
   width: 425px;
   background-color: rgb(0, 0, 0);
-  border: 1px solid white;
 }
 
 img {
@@ -79,6 +78,10 @@ img {
   flex-direction: column;
 }
 
+.containerPomodoro, .containerREST {
+  width: 380px;
+}
+
 .containerMainHeader {
   display: flex;
   justify-content: space-between;
@@ -93,11 +96,15 @@ img {
   font-size: 35px;
 }
 
-#contactMe {
+#contactMe, .containerMainViewProject > * {
   font-weight: 700;
   text-decoration: none;
   border-bottom: 2px solid rgb(37, 240, 216);
   padding-bottom: 8px;
+}
+
+.containerMainViewProject > * {
+  color: white;
 }
 
 #contactMe:hover {
@@ -106,4 +113,53 @@ img {
 
 #projects {
   color: white;
+}
+
+.containerRockScissorsPaperGame {
+  height: 700px;
+}
+
+#rockPaperScissorsName, #pomodoroName, #RESTName {
+  width: 325px;
+  margin-left: 50px;
+  color: white;
+}
+
+.containerMainViewProject {
+  width: 325px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.containerMainViewProject > *:hover {
+  color: bisque;
+}
+
+.containerLanguages {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  color: grey;
+  font-weight: 700;
+}
+
+#message, #phonenumber {
+  color: white;
+}
+
+.footerContainer {
+  width: 380px;
+  width: 425px;
+  display: flex;
+  justify-content: center;
+}
+
+.footerSubContainer {
+  width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }/*# sourceMappingURL=index.css.map */

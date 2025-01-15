@@ -11,7 +11,6 @@ body
     flex-direction: column;
     width: 425px;
     background-color: $backgroundColor1;
-    border:1px solid white;
 }
 
 img
@@ -98,7 +97,11 @@ img
     align-items: center;
     flex-direction: column;
 }
-
+.containerPomodoro, .containerREST
+{
+    width:calc($containerWidthMobile - 45px);
+}
+//Main header
 .containerMainHeader
 {
     display: flex;
@@ -115,12 +118,17 @@ img
     font-size: 35px;
 }
 
-#contactMe
+#contactMe, .containerMainViewProject>*
 {
     font-weight: 700;
     text-decoration: none;
     border-bottom: 2px solid rgb(37, 240, 216);
     padding-bottom: 8px;
+}
+
+.containerMainViewProject>*
+{
+    color:$fontColor1;
 }
 
 #contactMe:hover
@@ -131,4 +139,59 @@ img
 #projects
 {
     color: $fontColor1;
+}
+
+//#Rock Scissors Paper Game
+.containerRockScissorsPaperGame
+{
+    height: 700px;
+}
+#rockPaperScissorsName,#pomodoroName, #RESTName
+{
+    width: calc($containerWidthMobile - 100px);
+    margin-left: 50px;
+    color: white;
+}
+.containerMainViewProject
+{
+    width: calc($containerWidthMobile - 100px);
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.containerMainViewProject>*:hover
+{
+    color: bisque;
+}
+.containerLanguages
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    color:$fontColor2;
+    font-weight: 700;
+}
+
+//#Footer container
+#message, #phonenumber
+{
+    color:$fontColor1;
+}
+.footerContainer
+{
+    width:calc($containerWidthMobile - 45px);
+    width:$containerWidthMobile;
+    display: flex;
+    justify-content: center;
+}
+
+.footerSubContainer
+{
+    width:calc($containerWidthMobile - 45px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
