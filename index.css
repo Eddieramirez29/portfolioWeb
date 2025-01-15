@@ -162,4 +162,19 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+#showPhonenumberButton {
+  border: none;
+  height: 35px;
+  width: 70px;
+  border-radius: 10px;
+}
+
+#showPhonenumberButton:hover {
+  background-color: bisque;
+}
+
+#showPhonenumberButton:active {
+  transform: scale(0.85);
 }/*# sourceMappingURL=index.css.map */
