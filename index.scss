@@ -11,6 +11,7 @@ body
     flex-direction: column;
     width: 425px;
     background-color: $backgroundColor1;
+    border:1px solid white;
 }
 
 img
@@ -87,4 +88,47 @@ img
 .expertise
 {
     color: $fontColor2;
+}
+
+
+.containerMain
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerMainHeader
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:calc($containerWidthMobile - 45px);
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+#projects
+{
+    font-weight: 900;
+    font-size: 35px;
+}
+
+#contactMe
+{
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(37, 240, 216);
+    padding-bottom: 8px;
+}
+
+#contactMe:hover
+{
+    color: bisque;
+}
+
+#projects
+{
+    color: $fontColor1;
 }

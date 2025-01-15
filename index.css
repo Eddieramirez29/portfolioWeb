@@ -5,6 +5,7 @@ body {
   flex-direction: column;
   width: 425px;
   background-color: rgb(0, 0, 0);
+  border: 1px solid white;
 }
 
 img {
@@ -69,4 +70,40 @@ img {
 
 .expertise {
   color: grey;
+}
+
+.containerMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerMainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 380px;
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+#projects {
+  font-weight: 900;
+  font-size: 35px;
+}
+
+#contactMe {
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid rgb(37, 240, 216);
+  padding-bottom: 8px;
+}
+
+#contactMe:hover {
+  color: bisque;
+}
+
+#projects {
+  color: white;
 }/*# sourceMappingURL=index.css.map */
