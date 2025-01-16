@@ -37,10 +37,11 @@ contactMe.addEventListener('click', function(event) {
         setTimeout(() => {
             button.classList.add('highlight');
             button.classList.add('active');
-            setTimeout(() => {
+            setTimeout(() =>
+            {
                 button.classList.remove('highlight');
                 button.classList.remove('active');
             }, 2000);
-        }, 1500);
+        }, 500);
     }
 });
