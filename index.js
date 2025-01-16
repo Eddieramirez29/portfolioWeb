@@ -24,3 +24,23 @@ showPhoneNumberButton.addEventListener("click", function() {
         }, 250);
     }
 });
+
+//Go to "footerContainer section"
+const contactMe = document.getElementById('contactMe');
+
+contactMe.addEventListener('click', function(event) {
+    event.preventDefault();
+    const footerContainer = document.querySelector('.footerContainer');
+    const button = document.getElementById('showPhonenumberButton');
+    if (footerContainer) {
+        footerContainer.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => {
+            button.classList.add('highlight');
+            button.classList.add('active');
+            setTimeout(() => {
+                button.classList.remove('highlight');
+                button.classList.remove('active');
+            }, 2000);
+        }, 1500);
+    }
+});

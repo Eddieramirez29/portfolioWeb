@@ -212,7 +212,19 @@ img
     background-color: bisque;
 }
 
+.active {
+    transform: scale(0.85); /* Escala al hacer clic */
+    transition: transform 0.2s ease-in-out;
+}
+
 #showPhonenumberButton:active
 {
-    transform: scale(.85);
+    transform: scale(0.85);
+    transition: transform 0.2s ease-in-out;
+}
+
+.highlight
+{
+    background-color: yellow;
+    transition: background-color 0.5s ease-in-out;
 }
