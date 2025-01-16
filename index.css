@@ -116,12 +116,15 @@ img {
 }
 
 .containerRockScissorsPaperGame {
-  height: 700px;
+  height: 850px;
 }
 
 #rockPaperScissorsName, #pomodoroName, #RESTName {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   width: 325px;
-  margin-left: 50px;
+  margin-left: 35px;
   color: white;
 }
 
