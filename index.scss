@@ -24,7 +24,7 @@ img
     width: $containerWidthMobile;
 }
 
-#developerName, #developerGreetings, #contactMe
+#developerName, #developerGreetings, .contactMe
 {
     color: $fontColor1;
 }
@@ -118,7 +118,7 @@ img
     font-size: 35px;
 }
 
-#contactMe, .containerMainViewProject>*
+.contactMe, .containerMainViewProject>*
 {
     font-weight: 700;
     text-decoration: none;
@@ -131,7 +131,7 @@ img
     color:$fontColor1;
 }
 
-#contactMe:hover
+.contactMe:hover
 {
     color: bisque;
 }

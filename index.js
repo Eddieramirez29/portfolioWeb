@@ -26,15 +26,20 @@ showPhoneNumberButton.addEventListener("click", function() {
 });
 
 //Go to "footerContainer section"
-const contactMe = document.getElementById('contactMe');
+const contactMe = document.querySelectorAll(".contactMe")
 
-contactMe.addEventListener('click', function(event) {
+contactMe.forEach(link =>
+{
+    link.addEventListener('click', function(event)
+{
     event.preventDefault();
     const footerContainer = document.querySelector('.footerContainer');
     const button = document.getElementById('showPhonenumberButton');
-    if (footerContainer) {
+    if (footerContainer)
+    {
         footerContainer.scrollIntoView({ behavior: 'smooth' });
-        setTimeout(() => {
+        setTimeout(() =>
+        {
             button.classList.add('highlight');
             button.classList.add('active');
             setTimeout(() =>
@@ -45,3 +50,5 @@ contactMe.addEventListener('click', function(event) {
         }, 500);
     }
 });
+}
+)

@@ -16,7 +16,7 @@ img {
   width: 425px;
 }
 
-#developerName, #developerGreetings, #contactMe {
+#developerName, #developerGreetings, .contactMe {
   color: white;
 }
 
@@ -96,7 +96,7 @@ img {
   font-size: 35px;
 }
 
-#contactMe, .containerMainViewProject > * {
+.contactMe, .containerMainViewProject > * {
   font-weight: 700;
   text-decoration: none;
   border-bottom: 2px solid rgb(37, 240, 216);
@@ -107,7 +107,7 @@ img {
   color: white;
 }
 
-#contactMe:hover {
+.contactMe:hover {
   color: bisque;
 }
 
