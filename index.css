@@ -42,6 +42,13 @@ img {
   flex-direction: column;
 }
 
+.headerSubContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 #developerName {
   font-weight: 700;
 }
@@ -190,7 +197,7 @@ img {
 }
 
 .active {
-  transform: scale(0.85); /* Escala al hacer clic */
+  transform: scale(0.85);
   transition: transform 0.2s ease-in-out;
 }
 
@@ -202,4 +209,17 @@ img {
 .highlight {
   background-color: yellow;
   transition: background-color 0.5s ease-in-out;
+}
+
+/* On screens that are 1024px or more*/
+@media screen and (min-width: 1024px) {
+  .headerContainer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .headerSubContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=index.css.map */
