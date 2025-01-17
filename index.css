@@ -89,7 +89,6 @@ img {
   color: grey;
   display: flex;
   justify-content: center;
-  border: 1px solid wheat;
 }
 
 .containerMain {
@@ -235,5 +234,15 @@ img {
     justify-content: space-between;
     gap: 20px;
     padding: 20px 0;
+  }
+  .headerContainer, .containerKnowledge, .containerMain,
+  .containerPomodoro, .containerREST, .footerContainer, .containerMainHeader,
+  .containerMainViewProject {
+    width: 1024px;
+    margin: 0px;
+  }
+  .containerMainViewProject > * {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }/*# sourceMappingURL=index.css.map */
