@@ -8,10 +8,24 @@ body
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 425px;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+}
+
+.container
+{
+    width: $containerWidthMobile;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: $backgroundColor1;
 }
+
+
 
 img
 {
