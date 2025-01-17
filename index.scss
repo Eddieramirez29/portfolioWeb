@@ -106,6 +106,9 @@ img
 .expertise
 {
     color: $fontColor2;
+    display: flex;
+    justify-content: center;
+    border: 1px solid wheat;
 }
 
 
@@ -261,5 +264,18 @@ img
         display: flex;
         justify-content: center;
         flex-direction:column;
+    }
+    .containerKnowledge
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .containerKnowledge
+    {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px 0;
     }
 }
