@@ -6,7 +6,11 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  background-color: rgb(0, 0, 0);
+  background-color: #070F25;
+}
+
+#aboutRespoinsiveProjects {
+  color: white;
 }
 
 .container {
@@ -15,7 +19,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(0, 0, 0);
+  background-color: #070F25;
 }
 
 img {

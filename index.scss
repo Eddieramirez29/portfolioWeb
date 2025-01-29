@@ -1,4 +1,4 @@
-$backgroundColor1:rgb(0, 0, 0);
+$backgroundColor1:#070F25;
 $fontColor1: white;
 $fontColor2: grey;
 $containerWidthMobile:425px;
@@ -12,7 +12,12 @@ body
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    background-color: rgb(0, 0, 0);
+    background-color: $backgroundColor1;
+}
+
+#aboutRespoinsiveProjects
+{
+    color:white;
 }
 
 .container
