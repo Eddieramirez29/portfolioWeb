@@ -145,6 +145,14 @@ img
     text-decoration: none;
     border-bottom: 2px solid rgb(37, 240, 216);
     padding-bottom: 8px;
+    margin-bottom: 50px;
+    border-bottom: 10px solid white;
+}
+
+.containerCalendar, .containerRockScissorsPaperGame, .containerPomodoro, .containerREST
+{
+    border-bottom: 3px solid white;
+    margin-bottom: 50px;
 }
 
 .containerMainViewProject>*
@@ -167,7 +175,7 @@ img
 {
     height: 850px;
 }
-#rockPaperScissorsName,#pomodoroName, #RESTName
+#rockPaperScissorsName,#pomodoroName, #RESTName, #calendarName
 {
     display:flex;
     justify-content:center;
