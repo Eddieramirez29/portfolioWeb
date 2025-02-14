@@ -154,7 +154,7 @@ img
     border-bottom: 10px solid white;
 }
 
-.containerCalendar, .containerRockScissorsPaperGame, .containerPomodoro, .containerREST
+.containerCalendar, .containerRockScissorsPaperGame, .containerPomodoro, .containerREST, .containerToDoList
 {
     border-bottom: 3px solid white;
     margin-bottom: 50px;
@@ -180,7 +180,7 @@ img
 {
     height: 850px;
 }
-#rockPaperScissorsName,#pomodoroName, #RESTName, #calendarName
+#rockPaperScissorsName,#pomodoroName, #RESTName, #calendarName, #toDoListName
 {
     display:flex;
     justify-content:center;
