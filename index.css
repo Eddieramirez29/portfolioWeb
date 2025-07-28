@@ -150,7 +150,11 @@ img {
   height: 850px;
 }
 
-#rockPaperScissorsName, #pomodoroName, #RESTName, #calendarName, #toDoListName, #newsAppName {
+.projectLanguages, #aboutResponsiveProjects {
+  color: white;
+}
+
+.projectName {
   display: flex;
   justify-content: center;
   align-content: center;

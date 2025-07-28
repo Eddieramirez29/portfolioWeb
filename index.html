@@ -1,70 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
 </head>
 <body>
 
     <div class="container">
-        <!--Header-->
-    <div class="headerContainer">
+        <!-- Header -->
+        <div class="headerContainer">
+            <div class="headerSubContainer"></div>
 
-        <div class="headerSubContainer">
+            <div class="headerSubContainer2">
+                <h1 id="developerGreetings">
+                    Nice to meet you! <br />
+                    I'm Eduardo.
+                </h1>
+
+                <h3 id="developerDescription">
+                    I'm a front-end developer <br />
+                    passionate about building <br />
+                    accessible web pages.
+                </h3>
+                <a class="contactMe" href="#">Contact me</a>
+            </div>
         </div>
 
-        <div class="headerSubContainer2">
-            <h1 id="developerGreetings">Nice to meet you! <br>
-                I'm Eduardo.
-            </h1>
-    
-            <h3 id="developerDescription">I'm a front-end developer <br>
-                passionate about building <br>
-                accesible web pages.</h3>
-            <a class="contactMe" href="#">Contact me</a>
-        </div>
-    </div>
-    
-    <div class="containerMain">
-        <p id="aboutRespoinsiveProjects">Next five projects are responsive; for mobile and desktop</p>
-        <div class="containerMainHeader">
-            <div id="projects">Projects</div>
-            <a class="contactMe" href="#">Contact me</a>
-        </div>
-        
-        <!-- News App -->
-        <div class="containerNewsApp">
-            <img src="./images/news.png" alt="Not found">
-            <p id="newsAppName">
-                News App <br>
-                A web application that fetches news <br>
-                from an external API, allowing users <br>
-                to browse the latest articles dynamically.
+        <div class="containerMain">
+            <p id="aboutResponsiveProjects">
+                Next five projects are responsive; for mobile and desktop
             </p>
-        <div class="containerLanguages">
-            <p id="1">HTML</p>
-            <p id="2">CSS</p>
-            <p id="3">JavaScript</p>
+
+            <div class="containerMainHeader">
+                <div id="projects">Projects</div>
+                <a class="contactMe" href="#">Contact me</a>
+            </div>
+
+            <!-- News App -->
+            <div class="projectContainer">
+                <img src="./images/news.png" alt="News App" />
+                <p class="projectName">
+                    News App <br />
+                    A web application that fetches news <br />
+                    from an external API, allowing users <br />
+                    to browse the latest articles dynamically.
+                </p>
+                <div class="projectLanguages">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
+                <div class="projectLinks">
+                    <a href="https://eddieramirez29.github.io/NewsWithApi/">View Project</a>
+                    <a href="https://github.com/Eddieramirez29/NewsWithApi">View code</a>
+                </div>
+            </div>
+
+            <!-- Calendar App -->
+            <div class="projectContainer">
+                <img src="./images/calendar.png" alt="Calendar App" />
+                <p class="projectName">
+                    Calendar App <br />
+                    It allows you to navigate month by month.
+                </p>
+                <div class="projectLanguages">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
+                <div class="projectLinks">
+                    <a href="https://eddieramirez29.github.io/Calendar/">View Project</a>
+                    <a href="https://github.com/Eddieramirez29/Calendar/tree/main">View code</a>
+                </div>
+            </div>
+
+            <!-- REST Countries App -->
+            <div class="projectContainer">
+                <img src="./images/restApiCountries.png" alt="REST Countries App" />
+                <p class="projectName">
+                    REST Countries App <br />
+                    A web app that fetches countries and their flags. <br />
+                    It shows a card per country.
+                </p>
+                <div class="projectLanguages">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
+                <div class="projectLinks">
+                    <a href="https://eddieramirez29.github.io/REST-Countries-API-with-color-theme-switcher/">View Project</a>
+                    <a href="https://github.com/Eddieramirez29/REST-Countries-API-with-color-theme-switcher">View code</a>
+                </div>
+            </div>
+
+            <!-- Pomodoro App -->
+<div class="projectContainer">
+    <img src="./images/pomodor.png" alt="Pomodoro App" />
+    <p class="projectName">
+        Pomodoro App <br />
+        A customizable Pomodoro timer featuring focus sessions, short and long breaks. <br />
+        Users can adjust time, colors, and fonts, with a circular progress bar included.
+    </p>
+    <div class="projectLanguages">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JavaScript</p>
+    </div>
+    <div class="projectLinks">
+        <a href="https://eddieramirez29.github.io/Pomodoro/">View Project</a>
+        <a href="https://github.com/Eddieramirez29/Pomodoro/tree/main">View code</a>
+    </div>
+</div>
+
+<!-- Rock Paper Scissors Game -->
+<div class="projectContainer">
+    <img src="./images/rockPaperScissors.png" alt="Rock Paper Scissors Game" />
+    <p class="projectName">
+        Rock Paper Scissors Game <br />
+        A classic game against the computer using HTML, CSS, and JavaScript. <br />
+        Includes animations, scoring, and a replay option.
+    </p>
+    <div class="projectLanguages">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JavaScript</p>
+    </div>
+    <div class="projectLinks">
+        <a href="https://eddieramirez29.github.io/rock-paper-scissors-master/">View Project</a>
+        <a href="https://github.com/Eddieramirez29/rock-paper-scissors-master">View code</a>
+    </div>
+</div>
+
+
         </div>
-        <div class="containerMainViewProject">
-            <a id="viewProjectNewsApp" href="https://eddieramirez29.github.io/NewsWithApi/">View Project</a>
-            <a id="viewcodeNewsApp" href="https://github.com/Eddieramirez29/NewsWithApi">View code</a>
-        </div>
+
+        <!-- Footer container -->
+        <div class="footerContainer">
+            <div class="footerSubContainer">
+                <div id="message">
+                    If you want to contact me. Please, hit the button below
+                </div>
+                <button id="showPhonenumberButton">Here!</button>
+                <div id="phonenumber">---</div>
+                <div id="message2"></div>
+            </div>
         </div>
     </div>
 
-    <!-- #Footer container-->
-    <div class="footerContainer">
-        <div class="footerSubContainer">
-            <div id="message">If you want to contact me. Please, hit the button below</div>
-            <button id="showPhonenumberButton">Here!</button>
-            <div id="phonenumber">---</div>
-            <div id="message2"></div>
-        </div>
-    </div>
-    </div>
     <script src="./index.js"></script>
 </body>
 </html>
