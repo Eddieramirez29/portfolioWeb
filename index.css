@@ -150,7 +150,7 @@ img {
   height: 850px;
 }
 
-#rockPaperScissorsName, #pomodoroName, #RESTName, #calendarName, #toDoListName {
+#rockPaperScissorsName, #pomodoroName, #RESTName, #calendarName, #toDoListName, #newsAppName {
   display: flex;
   justify-content: center;
   align-content: center;
