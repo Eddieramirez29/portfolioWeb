@@ -1,311 +1,198 @@
-$backgroundColor1:#070F25;
+$backgroundColor1: #070F25;
 $fontColor1: white;
 $fontColor2: grey;
-$containerWidthMobile:425px;
+$containerWidthMobile: 425px;
 
-body
-{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
-    background-color: $backgroundColor1;
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  background-color: $backgroundColor1;
 }
 
-#aboutRespoinsiveProjects
+#aboutResponsiveProjects
 {
     color:white;
 }
 
-.container
-{
-    width: $containerWidthMobile;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: $backgroundColor1;
+.container {
+  width: $containerWidthMobile;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $backgroundColor1;
 }
 
-img
-{
-    width: 380px;
+img {
+  width: 380px;
 }
 
-.headerContainer, .containerKnowledge, .containerMain,
-.containerPomodoro, .containerREST, .footerContainer
-{
-    width: $containerWidthMobile;
+.headerContainer,
+.containerMain,
+.footerContainer {
+  width: $containerWidthMobile;
 }
 
-#developerName, #developerGreetings, .contactMe
-{
-    color: $fontColor1;
-}
-#developerDescription
-{
-    color: $fontColor2;
-}
-
-
-.headerContainer
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.headerSubContainer
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#developerGreetings,
+.contactMe,
+#message,
+#phonenumber,
+.projectLanguages,
+.projectName,
+#projects,
+.containerMainViewProject > * {
+  color: $fontColor1;
 }
 
-#developerName
-{
-    font-weight: 700;
-}
-#developerPhoto
-{
-    width: 223px;
-}
-#developerGreetings
-{
-    
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-#developerDescription
-{
-    
-    display: flex;
-    justify-content: center;
-    align-content: center;
+#developerDescription,
+.technology,
+.expertise,
+.containerLanguages {
+  color: $fontColor2;
 }
 
-.containerKnowledge
-{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.headerContainer,
+.headerSubContainer,
+.containerKnowledge,
+.containerKnowledge > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.containerKnowledge >*
-{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+#developerName {
+  font-weight: 700;
 }
 
-.technology
-{
-    color: $fontColor1;
+#developerPhoto {
+  width: 223px;
 }
 
-.expertise
-{
-    color: $fontColor2;
-    display: flex;
-    justify-content: center;
+.containerMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-
-.containerMain
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.containerPomodoro, .containerREST
-{
-    width:calc($containerWidthMobile - 45px);
-}
-//Main header
-.containerMainHeader
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width:calc($containerWidthMobile - 45px);
-    margin-bottom: 20px;
-    height: 40px;
+.containerMainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc($containerWidthMobile - 45px);
+  margin-bottom: 20px;
+  height: 40px;
 }
 
-#projects
-{
-    font-weight: 900;
-    font-size: 35px;
+#projects {
+  font-weight: 900;
+  font-size: 35px;
 }
 
-.contactMe, .containerMainViewProject>*
-{
-    font-weight: 700;
-    text-decoration: none;
-    border-bottom: 2px solid rgb(37, 240, 216);
-    padding-bottom: 8px;
-    margin-bottom: 50px;
-    border-bottom: 10px solid white;
+.contactMe,
+.containerMainViewProject > * {
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 10px solid white;
+  padding-bottom: 8px;
+  margin-bottom: 50px;
 }
 
-.containerCalendar, .containerRockScissorsPaperGame, .containerPomodoro, .containerREST, .containerToDoList
-{
-    border-bottom: 3px solid white;
-    margin-bottom: 50px;
+.contactMe:hover,
+.containerMainViewProject > *:hover {
+  color: bisque;
 }
 
-.containerMainViewProject>*
-{
-    color:$fontColor1;
+.projectName {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: calc($containerWidthMobile - 100px);
+  margin-left: 35px;
 }
 
-.contactMe:hover
-{
-    color: bisque;
+.containerMainViewProject {
+  width: calc($containerWidthMobile - 100px);
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-#projects
-{
-    color: $fontColor1;
+.containerLanguages {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  font-weight: 700;
 }
 
-//#Rock Scissors Paper Game
-.containerRockScissorsPaperGame
-{
-    height: 850px;
+.footerContainer {
+  display: flex;
+  justify-content: center;
 }
 
-.projectLanguages, #aboutResponsiveProjects
-{
-    color: white;
-}
-.projectName
-{
-    display:flex;
-    justify-content:center;
-    align-content:center;
-    width: calc($containerWidthMobile - 100px);
-    margin-left: 35px;
-    color: white;
-}
-.containerMainViewProject
-{
-    width: calc($containerWidthMobile - 100px);
-    margin-left: 50px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+.footerSubContainer {
+  width: calc($containerWidthMobile - 45px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.containerMainViewProject>*:hover
-{
-    color: bisque;
+#showPhonenumberButton {
+  border: none;
+  height: 35px;
+  width: 70px;
+  border-radius: 10px;
 }
-.containerLanguages
-{
-    display: flex;
-    justify-content: space-evenly;
+
+#showPhonenumberButton:hover {
+  background-color: #2361C5;
+}
+
+#showPhonenumberButton:active {
+  transform: scale(0.85);
+  transition: transform 0.2s ease-in-out;
+}
+
+.highlight {
+  background-color: yellow;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* Responsive (Desktop) */
+@media screen and (min-width: 1024px) {
+  .headerContainer {
+    flex-direction: row-reverse;
+  }
+
+  .containerKnowledge {
     flex-direction: row;
-    color:$fontColor2;
-    font-weight: 700;
-}
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+  }
 
-//#Footer container
-#message, #phonenumber
-{
-    color:$fontColor1;
-}
-.footerContainer
-{
-    width:calc($containerWidthMobile - 45px);
-    width:$containerWidthMobile;
-    display: flex;
-    justify-content: center;
-}
+  .headerContainer,
+  .containerKnowledge,
+  .containerMain,
+  .containerPomodoro,
+  .containerREST,
+  .footerContainer,
+  .containerMainHeader,
+  .containerMainViewProject {
+    width: 1024px;
+    margin: 0;
+  }
 
-.footerSubContainer
-{
-    width:calc($containerWidthMobile - 45px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#showPhonenumberButton
-{
-    border:none;
-    height: 35px;
-    width: 70px;
-    border-radius: 10px;
-}
-
-#showPhonenumberButton:hover
-{
-    background-color: #2361C5;
-}
-
-.active
-{
-    transform: scale(0.85);
-    transition: transform 0.2s ease-in-out;
-}
-
-#showPhonenumberButton:active
-{
-    transform: scale(0.85);
-    transition: transform 0.2s ease-in-out;
-}
-
-.highlight
-{
-    background-color: yellow;
-    transition: background-color 0.5s ease-in-out;
-}
-/* On screens that are 1024px or more*/
-@media screen and (min-width: 1024px)
-{
-    .headerContainer
-    {
-        display: flex;
-        flex-direction:row-reverse;
-    }
-    .headerSubContainer
-    {
-        display: flex;
-        justify-content: center;
-        flex-direction:column;
-    }
-    .containerKnowledge
-    {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-    }
-    .containerKnowledge
-    {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        padding: 20px 0;
-    }
-    .headerContainer, .containerKnowledge, .containerMain,
-    .containerPomodoro, .containerREST, .footerContainer, .containerMainHeader,
-    .containerMainViewProject
-    {
-        width: 1024px;
-
-        margin:0px;
-    }
-    .containerMainViewProject >*
-    {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+  .containerMainViewProject > * {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }

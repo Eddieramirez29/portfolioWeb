@@ -9,7 +9,7 @@ body {
   background-color: #070F25;
 }
 
-#aboutRespoinsiveProjects {
+#aboutResponsiveProjects {
   color: white;
 }
 
@@ -26,27 +26,34 @@ img {
   width: 380px;
 }
 
-.headerContainer, .containerKnowledge, .containerMain,
-.containerPomodoro, .containerREST, .footerContainer {
+.headerContainer,
+.containerMain,
+.footerContainer {
   width: 425px;
 }
 
-#developerName, #developerGreetings, .contactMe {
+#developerGreetings,
+.contactMe,
+#message,
+#phonenumber,
+.projectLanguages,
+.projectName,
+#projects,
+.containerMainViewProject > * {
   color: white;
 }
 
-#developerDescription {
+#developerDescription,
+.technology,
+.expertise,
+.containerLanguages {
   color: grey;
 }
 
-.headerContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.headerSubContainer {
+.headerContainer,
+.headerSubContainer,
+.containerKnowledge,
+.containerKnowledge > * {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,49 +68,11 @@ img {
   width: 223px;
 }
 
-#developerGreetings {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-#developerDescription {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.containerKnowledge {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.containerKnowledge > * {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.technology {
-  color: white;
-}
-
-.expertise {
-  color: grey;
-  display: flex;
-  justify-content: center;
-}
-
 .containerMain {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.containerPomodoro, .containerREST {
-  width: 380px;
 }
 
 .containerMainHeader {
@@ -120,38 +89,18 @@ img {
   font-size: 35px;
 }
 
-.contactMe, .containerMainViewProject > * {
+.contactMe,
+.containerMainViewProject > * {
   font-weight: 700;
   text-decoration: none;
-  border-bottom: 2px solid rgb(37, 240, 216);
+  border-bottom: 10px solid white;
   padding-bottom: 8px;
   margin-bottom: 50px;
-  border-bottom: 10px solid white;
 }
 
-.containerCalendar, .containerRockScissorsPaperGame, .containerPomodoro, .containerREST, .containerToDoList {
-  border-bottom: 3px solid white;
-  margin-bottom: 50px;
-}
-
-.containerMainViewProject > * {
-  color: white;
-}
-
-.contactMe:hover {
+.contactMe:hover,
+.containerMainViewProject > *:hover {
   color: bisque;
-}
-
-#projects {
-  color: white;
-}
-
-.containerRockScissorsPaperGame {
-  height: 850px;
-}
-
-.projectLanguages, #aboutResponsiveProjects {
-  color: white;
 }
 
 .projectName {
@@ -160,7 +109,6 @@ img {
   align-content: center;
   width: 325px;
   margin-left: 35px;
-  color: white;
 }
 
 .containerMainViewProject {
@@ -171,25 +119,14 @@ img {
   margin-bottom: 20px;
 }
 
-.containerMainViewProject > *:hover {
-  color: bisque;
-}
-
 .containerLanguages {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  color: grey;
   font-weight: 700;
 }
 
-#message, #phonenumber {
-  color: white;
-}
-
 .footerContainer {
-  width: 380px;
-  width: 425px;
   display: flex;
   justify-content: center;
 }
@@ -213,11 +150,6 @@ img {
   background-color: #2361C5;
 }
 
-.active {
-  transform: scale(0.85);
-  transition: transform 0.2s ease-in-out;
-}
-
 #showPhonenumberButton:active {
   transform: scale(0.85);
   transition: transform 0.2s ease-in-out;
@@ -228,33 +160,27 @@ img {
   transition: background-color 0.5s ease-in-out;
 }
 
-/* On screens that are 1024px or more*/
+/* Responsive (Desktop) */
 @media screen and (min-width: 1024px) {
   .headerContainer {
-    display: flex;
     flex-direction: row-reverse;
   }
-  .headerSubContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
   .containerKnowledge {
-    display: flex;
-    align-items: center;
     flex-direction: row;
-  }
-  .containerKnowledge {
-    display: flex;
     justify-content: space-between;
     gap: 20px;
     padding: 20px 0;
   }
-  .headerContainer, .containerKnowledge, .containerMain,
-  .containerPomodoro, .containerREST, .footerContainer, .containerMainHeader,
+  .headerContainer,
+  .containerKnowledge,
+  .containerMain,
+  .containerPomodoro,
+  .containerREST,
+  .footerContainer,
+  .containerMainHeader,
   .containerMainViewProject {
     width: 1024px;
-    margin: 0px;
+    margin: 0;
   }
   .containerMainViewProject > * {
     margin-left: 20px;
