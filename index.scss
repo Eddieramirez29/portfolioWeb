@@ -28,6 +28,7 @@ body {
 #aboutResponsiveProjects
 {
     color:white;
+    font-size: 50px;
 }
 
 .container {
@@ -59,6 +60,8 @@ img {
 .containerMainViewProject > * {
   color: $fontColor1;
 }
+
+
 
 #developerDescription,
 .technology,
@@ -103,7 +106,7 @@ img {
 
 #projects {
   font-weight: 900;
-  font-size: 35px;
+  font-size: 50px;
 }
 
 .contactMe,

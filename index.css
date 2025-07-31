@@ -19,6 +19,7 @@ body {
 
 #aboutResponsiveProjects {
   color: white;
+  font-size: 50px;
 }
 
 .container {
@@ -94,7 +95,7 @@ img {
 
 #projects {
   font-weight: 900;
-  font-size: 35px;
+  font-size: 50px;
 }
 
 .contactMe,
